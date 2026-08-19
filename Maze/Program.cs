@@ -10,7 +10,7 @@ namespace Maze
         {
             MazeFactory factory = new MazeFactory();
 
-            MazeModel mod = factory.CreateMaze("premier labyrinthe");
+            MazeModel mod = factory.CreateMaze("FirstMaze");
             MazeVue view = new MazeVue(); 
 
             MazeControler controler = new MazeControler();

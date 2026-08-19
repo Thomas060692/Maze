@@ -6,7 +6,12 @@ namespace Maze
     {
         public MazeModel CreateMaze(string name)
         {
-            return new MazeModel(name);
+            MazeBuilder builder = new MazeBuilder();
+            MazeFileReader mReader = new MazeFileReader(builder);
+
+            mReader.Read(name);
+
+            return builder.Build();
         }
     }
 }
